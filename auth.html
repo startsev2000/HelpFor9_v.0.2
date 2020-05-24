@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="outer">
+        <div class="inner">
+            <h2>
+                Добро пожаловать!<br>
+                Пожалуйста, авторизуйтесь.
+            </h2>
+            <input type="text" placeholder="Логин">
+            <input type="password" placeholder="Пароль">
+            <div class="centered">
+                <p>Забыли пароль?</p>
+                <button>Войти</button>
+            </div>
+        </div>
+</div>
+<script>
+    function f() {
+        let block = document.querySelector('.inner');
+        block.style.width = String(Math.round(window.innerWidth * 0.3)) + "px";
+        block.style.height = String(Math.round(window.innerHeight * 0.26)) + "px";
+        block.style.marginTop = String(Math.round(window.innerHeight * 0.37) - 30) + "px";
+        let fields = document.querySelectorAll('input');
+        fields[0].style.marginBottom = String(Math.round(window.innerHeight * 0.0176)) + "px";
+        for (let i of fields) {
+            i.style.width = String(Math.round(window.innerWidth * 0.2) - Math.round(window.innerWidth * 0.03125)) + "px";
+            i.style.height = String(Math.round(window.innerHeight * 0.038)) + "px";
+            i.style.fontSize = String(Math.round(window.innerWidth * 0.0104)) + "px";
+            i.style.paddingLeft = String(Math.round(window.innerWidth * 0.03125)) + "px";
+        }
+        document.querySelector('h2').style.fontSize = String(window.innerWidth * 0.0125) + "px";
+        document.querySelector('p').style.fontSize = String(window.innerWidth * 0.0076) + "px";
+        document.querySelector('p').style.marginRight = String(window.innerWidth * 0.0125) + "px";
+        let btn = document.querySelector('button');
+        btn.style.width = String(window.innerWidth * 0.0674) + "px";
+        btn.style.height = String(Math.round(innerHeight * 0.0264)) + "px";
+        btn.style.fontSize = String(Math.round(window.innerWidth * 0.0076)) + "px";
+    }
+
+    setInterval(f, 1);
+</script>
+</body>
+</html>

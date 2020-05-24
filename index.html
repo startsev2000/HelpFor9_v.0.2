@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="spaced_main">
+        <div class="centered" style="width: 400px;">
+            <div class="centered" style="width: 150px;">
+                <p style="font-family: CenGothic; font-size: 16px; font-weight: bold;">#HelpFor9</p>
+            </div>
+            <input type="text" class="search" value="" placeholder="Поиск">
+        </div>
+    </div>
+</header>
+<div class="centered" style="margin-top: 40px">
+    <a href="https://school.hse.ru/" target="_blank"><img src="images/hse_lyc.png" width="75" height="75"></a>
+</div>
+<div class="spaced_main" style="font-family: 'Asap'">
+    <div class="button centered" style="width: 149px">
+        <h4>СОВЕТ ЛИЦЕИСТОВ</h4>
+    </div>
+    <div class="spaced" style="width: 400px; margin: 0">
+        <div class="button centered" style="width: 117px">
+            <h4>ФАКУЛЬТАТИВЫ</h4>
+        </div>
+        <div class="button centered" style="width: 164px">
+            <h4>КАЛЕНДАРЬ СОБЫТИЙ</h4>
+        </div>
+    </div>
+</div>
+<div class="centered greeting">
+    <h1 class="centered" style="font-family: Georgia; margin: 75px 50px; width: 800px;">Мы поможем тебе определиться<br>
+        с направлением дальнейшего образования</h1>
+</div>
+<div class="spaced_main icon_line">
+    <div class="icon_outer">
+        <div class="icon_dpt rect">
+            <img src="images/matinfo.png" alt="">
+        </div>
+        <h2 class="centered">Информатика,<br>инженерия и математика</h2>
+    </div>
+    <div class="bottom icon_outer">
+        <div class="icon_dpt box">
+            <img src="images/psikhologia.png" alt="">
+        </div>
+        <h2 class="centered">Психология</h2>
+    </div>
+    <div class="icon_outer">
+        <div class="icon_dpt rect">
+            <img src="images/yurisprudentsia.png" alt="">
+        </div>
+        <h2 class="centered">Юриспруденция</h2>
+    </div>
+    <div class="bottom icon_outer">
+        <div class="icon_dpt box">
+            <img src="images/dizayn.png" alt="">
+        </div>
+        <h2 class="centered">Дизайн</h2>
+    </div>
+    <div class="icon_outer">
+        <div class="icon_dpt rect">
+            <img src="images/gumanitarnye_nauki.png" alt="">
+        </div>
+        <h2 class="centered">Гуманитарные науки</h2>
+    </div>
+</div>
+<div class="spaced_main icon_line">
+    <div class="icon_outer">
+        <div class="icon_dpt box">
+            <img src="images/matematika.png" alt="">
+        </div>
+        <h2 class="centered">Математика</h2>
+    </div>
+    <div class="bottom icon_outer">
+        <div class="icon_dpt box">
+            <img src="images/khimbio.png" alt="">
+        </div>
+        <h2 class="centered">Естественные науки</h2>
+    </div>
+    <div class="icon_outer">
+        <div class="icon_dpt box">
+            <img src="images/vostokovedenie.png" alt="">
+        </div>
+        <h2 class="centered">Востоковедение</h2>
+    </div>
+    <div class="bottom icon_outer">
+        <div class="icon_dpt rect">
+            <img src="images/ekonomika_i_matematika.png" alt="">
+        </div>
+        <h2 class="centered">Экономика и математика</h2>
+    </div>
+    <div class="icon_outer">
+        <div class="icon_dpt box">
+            <img src="images/ekonomika_i_sotsialnye_nauki.png" alt="">
+        </div>
+        <h2 class="centered">Экономика и<br>социальные науки</h2>
+    </div>
+</div>
+<div class="fut"></div>
+<div class="info">
+    <div>
+        <p>Привет, девятиклассник!<img src="images/image%201.png" alt="" style="margin: 0 10px"></p>
+        <p>Будущее и время - вот чем ты управляешь, поэтому направление и назвали<br>
+            "Футуритеt". Сейчас ты находишься на отправной точке, впереди десять дорог, десять<br>
+            вариантов обучения. Тебе предстоит нелёгкий выбор, и мы хотим тебе помочь.
+        </p>
+        <p>Узнай всё о направлениях, ознакомься с факультативами и мероприятиями и<br>
+            посчитай свой средний балл по профильным предметам с помощью специального<br>
+            калькулятора.
+        </p>
+        <p>Искренне Ваш, первый выпуск Футуритета.</p>
+        <br>
+        <p>Если у Вас есть предложения, пишите сюда.</p>
+    </div>
+</div>
+<div class="fut"></div>
+<script>
+    function heightChange(){
+        let l = window.innerHeight;
+        let lines = document.querySelectorAll('.icon_line');
+        for (let i of lines) {
+            i.style.height = String(Math.round(+l * 0.31)) + "px";
+            let boxes = i.querySelectorAll('.box');
+            for (let b of boxes) {
+                let k = b.querySelector('img');
+                k.setAttribute("height", String(Math.round(+l * 0.11)) + "px");
+            }
+        }
+        let i = document.querySelector('.info');
+        i.style.fontSize = String(window.innerWidth * 0.0125) + "px";
+    }
+
+    setInterval(heightChange, 1)
+</script>
+</body>
+</html>
