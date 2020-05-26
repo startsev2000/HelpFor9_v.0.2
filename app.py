@@ -27,13 +27,14 @@ def login():
     # client-side form data. For example, WTForms is a library that will
     # handle this for us, and we use a custom LoginForm to validate.
     form = request.form
-    print(request.form)
-    password = hashlib.sha256()
-    password.update(str(form['password']).encode('utf-8'))
-    password = str(password.hexdigest())
-    user = User.query.filter_by(email=str(form['email']),
-                                password=password).all()
     user = None
+    if form.get('password') and  form.get('email'):
+        password = hashlib.sha256()
+        password.update(str(form['password']).encode('utf-8'))
+        password = str(password.hexdigest())
+        user = User.query.filter_by(email=str(form['email']),
+                                    password=password).all()
+
     if user:
         login_user(user)
 
@@ -46,7 +47,7 @@ def login():
             return flask.abort(400)
 
         return flask.redirect(next or flask.url_for('index'))
-    return flask.render_template('login.html', form=form)
+    return flask.render_template('login.html')
 
 
 @app.route("/logout")
