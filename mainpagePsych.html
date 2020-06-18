@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Психология</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainpagePsych.css">
+    <link rel="stylesheet" href="mainpageDprtmnt.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="headerChange.js"></script>
+</head>
+<body>
+<header style="display: flex; align-items: center">
+    <p style="font-family: CenGothic; font-size: 16px; font-weight: bold; margin: 0 1% 0 10%;">#HelpFor9</p>
+    <input type="text" class="search" value="" placeholder="Поиск">
+</header>
+<div class="rec">
+    <img src="images/Psych/Group%20144.png" alt="">
+    <img src="images/Psych/Group%20145.png" alt="" style="right: 0">
+    <img src="images/Psych/headerPsych.png" alt="">
+    <img src="images/Psych/advicePsych.png" alt="">
+    <img src="images/Psych/insigniaPsych.png" alt="">
+    <div style="position:absolute; display: flex; align-items: center">
+        <a href=""><p>календарь событий</p></a>
+        <img src="images/Ellipse%20205.png" alt="">
+        <a href=""><p>контакты</p></a>
+    </div>
+</div>
+<div class="orangeEast"></div>
+<div class="desc centered">
+    <p>
+        “Востоки” – так называют ребят, которые учатся на этом<br>
+        направлении. Они будущие методисты, журналисты,<br>
+        переводчики, преподаватели и, пожалуй, просто<br>
+        самые загадочные ребята.<br>
+        <br>
+        При выборе этого направления ты получишь знания в<br>
+        области истории, культуры, литературы родной страны,<br>
+        а также будешь ориентироваться в экономических и<br>
+        политических тенденциях развития восточного региона,<br>
+        в истории развития отношений России<br>
+        с восточными странами.
+    </p>
+</div>
+<div class="orangeEast"></div>
+<div class="btns centered">
+    <img src="images/Group%20127.png" alt="">
+    <img src="images/Group%20129.png" alt="">
+    <img src="images/Group%20128.png" alt="">
+</div>
+<div class="blueEast"></div>
+<div class="centered someInfo">
+    <div>
+        <p>
+            Направление востоковедение поможет тебе разобраться в том, что<br>
+            такое востоковедение и какие профессии бывают в этой сфере.<br>
+            Даже если твой интерес к восточным языкам начался только<br>
+            недавно, не переживай, ты можешь выбрать для изучения с нуля<br>
+            один из четырех: китайский, корейский, японский  или арабский.
+        </p>
+    </div>
+</div>
+<div class="blueEast"></div>
+<div class="treat centered">
+    <img src="images/East/Group%20143.png" alt="">
+</div>
+<script>
+    function wdth(x) {
+        return String(Math.round(window.innerWidth * x));
+    }
+
+    function hght(x) {
+        return String(Math.round(window.innerHeight * x));
+    }
+
+    function f() {
+        let block = document.querySelector('.rec');
+        block.style.height = hght(0.537109375) + "px";
+        let images = block.querySelectorAll('img');
+        images[0].setAttribute("width", wdth(0.20833333) + "px");
+        images[1].setAttribute("width", wdth(0.13888889) + "px");
+        images[2].setAttribute("width", wdth(0.27777778) + "px");
+        images[2].style.left = wdth(0.22569444) + "px";
+        images[3].setAttribute("width", wdth(0.59027778) + "px");
+        images[3].style.left = wdth(0.20486111) + "px";
+        images[3].style.bottom = hght(0.0244140625) + "px";
+        images[4].setAttribute("width", wdth(0.03888889) + "px");
+        images[4].style.top = hght(0.0244140625) + "px";
+        images[4].style.right = wdth(0.03472222) + "px";
+        block.style.fontSize = wdth(0.0090277778) + "px";
+        images[5].setAttribute("width", wdth(0.0048611111) + "px");
+        images[5].setAttribute("height", hght(0.0078125) + "px");
+        images[5].style.marginLeft = wdth(0.0104166667) + "px";
+        images[5].style.marginRight = wdth(0.0104166667) + "px";
+        let linksHead = block.querySelector('div');
+        linksHead.style.height = hght(0.01953125) + "px";
+        linksHead.style.right = wdth(0.11111111) + "px";
+        linksHead.style.top = hght(0.046875) + "px";
+        linksHead.style.lineHeight = hght(0.015625) + "px";
+        block.style.marginBottom = hght(0.048828125) + "px";
+        let orangeLines = document.querySelectorAll('.orangeEast');
+        for (let l of orangeLines) {
+            l.style.height = hght(0.0244140625) + "px";
+            l.style.backgroundSize = wdth(0.3472222222) + "px " + hght(0.02734375) + "px";
+        }
+        let desc = document.querySelector('.desc');
+        desc.style.fontSize = wdth(0.01388889) + "px";
+        desc.style.lineHeight = wdth(0.01666667) + "px";
+        desc.style.height = hght(0.48828125) + "px";
+        desc.style.backgroundSize = "auto " + hght(0.362109375) + "px";
+        document.querySelector('.btns').style.height = hght(0.390625) + "px";
+        let guys = document.querySelector('.btns').querySelectorAll('img');
+        for (let guy of guys) {
+            guy.setAttribute("height", hght(0.25) + "px");
+        }
+        guys[1].style.marginLeft = wdth(0.0868055556) + "px";
+        guys[1].style.marginRight = wdth(0.0868055556) + "px";
+        let blueLines = document.querySelectorAll('.blueEast');
+        for (let l of blueLines) {
+            l.style.height = hght(0.0244140625) + "px";
+            l.style.backgroundSize = wdth(0.3472222222) + "px " + hght(0.02734375) + "px";
+        }
+        let infoEast = document.querySelector('.someInfo');
+        infoEast.style.fontSize = wdth(0.01388889) + "px";
+        infoEast.style.lineHeight = hght(0.029296875) + "px";
+        infoEast.style.height = hght(0.3173828125) + "px";
+        let treat = document.querySelector('.treat').querySelector('img');
+        treat.setAttribute("width", wdth(0.6) + "px");
+        treat.style.marginTop = hght(0.048828125) + "px";
+    }
+
+    setInterval(f, 1);
+</script>
+</body>
+</html>

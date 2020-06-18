@@ -1,0 +1,23 @@
+.orangeEast {
+    background: url("images/East/orangeEast.png");
+    width: 100%;
+}
+
+.blueEast {
+    background: url("images/East/blueEast.png");
+    width: 100%;
+}
+
+.desc {
+    font-family: Montserrat;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    background: url("images/East/girlEast.png") no-repeat right 10% center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.someInfo {
+    text-align: center;
+}

@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
 }
 
 header {
@@ -15,16 +14,21 @@ header {
 .search {
     display: flex;
     align-items: center;
-    width: 167px;
-    height: 20px;
     outline: 0;
     border: none;
-    background-color: #ffffff;
     box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     font-size: 13px;
     text-shadow: 0.3px 0.3px 2px rgba(0, 0, 0, 0.03);
+    background: rgb(255, 255, 255) url("images/image 88.png") no-repeat left 2% center;
+    background-size: contain;
+    color: rgb(240, 227, 157);
 }
+
+::-webkit-input-placeholder {color:rgb(240, 227, 157);}
+::-moz-placeholder          {color:rgb(240, 227, 157);}
+:-moz-placeholder           {color:rgb(240, 227, 157);}
+:-ms-input-placeholder      {color:rgb(240, 227, 157);}
 
 .spaced {
     display: flex;
@@ -32,19 +36,14 @@ header {
     margin: 0 5%;
 }
 
-.button {
-    border: 3px solid rgba(147, 182, 98, 0.8);
-    text-align: center;
-    font-size: 11.5px;
-    height: 31px;
-    background-color: rgb(249, 250, 233);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.08);
+.spaced_main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
 }
 
 body {
-    background-color: rgb(254, 255, 244);
+    background-color: rgb(250, 251, 244);
     height: auto;
 }
 

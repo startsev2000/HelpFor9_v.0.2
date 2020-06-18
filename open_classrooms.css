@@ -1,0 +1,61 @@
+.rec {
+    position: relative;
+    background: url("images/openClassrooms/Group 70.png") no-repeat right center,
+    url("images/openClassrooms/Group 69.png") no-repeat left center;
+    height: auto;
+    background-size: contain;
+}
+
+.girl {
+    position: absolute;
+}
+
+table {
+    border: rgba(83, 74, 74, 0.5) 1px solid;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+th {
+    border-right: 1px rgba(83, 74, 74, 0.5) solid;
+    color: white;
+    background-color: rgb(154, 198, 147);
+    font-weight: normal;
+}
+
+td {
+    border-right: 1px rgba(83, 74, 74, 0.5) solid;
+    font-weight: normal;
+}
+
+h4 {
+    text-decoration: underline rgba(6, 6, 6, 0.13);
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+p {
+    color: rgb(81, 65, 65);
+}
+
+.btn {
+    border: 1.5px solid rgb(156, 187, 114);
+    background: rgb(249, 250, 233) url("images/openClassrooms/image 37.png") no-repeat right 3% center;
+    background-size: 9%;
+    font-family: Calibri;
+    position: relative;
+}
+
+li {
+    background-color: rgb(249, 250, 233);
+}
+
+.submenu {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+}
+
+.btn:hover > ul {
+    display: block;
+}

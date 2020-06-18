@@ -1,0 +1,22 @@
+.orangeHsc {
+    background: url("images/HumSc/Group 15.png");
+    width: 100%;
+}
+
+.blueHSc {
+    background: url("images/HumSc/Group 23.png");
+    width: 100%;
+}
+
+.desc {
+    font-family: Montserrat;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    background: url("images/HumSc/boyHSc.png") no-repeat left 10% center,
+    url("images/HumSc/girlHSc.png") no-repeat right 10% center;
+    background-size: contain;
+}
+
+.someInfo {
+    text-align: left;
+}

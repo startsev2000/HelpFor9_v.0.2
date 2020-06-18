@@ -1,0 +1,28 @@
+.rec {
+    position: relative;
+    letter-spacing: 0.04em;
+    font-style: normal;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.rec > img {
+    position: absolute;
+}
+
+.rec > div > a, a:visited {
+    text-decoration-color: black;
+    color: black;
+}
+
+.btns {
+    background: url("images/Group 125.png") no-repeat left center,
+    url("images/Group 126.png") no-repeat right center;
+    background-size: contain;
+}
+
+.someInfo {
+    font-family: 'Montserrat';
+    letter-spacing: 0.18em;
+    font-weight: 600;
+}

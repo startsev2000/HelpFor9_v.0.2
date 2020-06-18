@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список факультативов</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="open_classrooms.css">
+    <script src="headerChange.js"></script>
+</head>
+<body>
+<header style="display: flex; align-items: center">
+    <p style="font-family: CenGothic; font-size: 16px; font-weight: bold; margin: 0 1% 0 10%;">#HelpFor9</p>
+    <input type="text" class="search" value="" placeholder="Поиск">
+</header>
+<div class="rec">
+    <img src="images/openClassrooms/Group%2045.png" alt="">
+    <img src="images/openClassrooms/Group%2071.png" alt="" class="girl">
+</div>
+<div class="btn">
+    По направлениям
+    <ul class="submenu">
+        <li>По направлениям</li>
+        <li>По кафедрам</li>
+    </ul>
+</div>
+<table style="font-family: CenGothic;">
+    <tr id="first">
+        <th style="text-align: left">Название факультатива</th>
+        <th>Время</th>
+        <th>Преподаватель</th>
+    </tr>
+    <tbody>
+    <tr>
+        <td>
+            <h4>Экспериментальная химия</h4>
+            <p>Взрывы, интересные эксперименты, ракеты - все это на экспериментальной<br>
+                химии. Вы научитесь вырабатывать алгоритм получения различных<br>
+                веществ с заданными химическими и физическими свойствами и проводить их<br>
+                идентификацию.</p>
+        </td>
+        <td align="center" valign="center">
+            Понедельник<br>
+            5 пара,16:20<br>
+            ауд. 215, Солянка
+        </td>
+        <td align="center" valign="center">
+            Васильев Василий<br>
+            Васильевич
+        </td>
+    </tr>
+    </tbody>
+</table>
+<script>
+    function f() {
+        let headline = document.querySelector('img');
+        headline.setAttribute("width", String(Math.round(window.innerWidth * 0.416667)));
+        let block = document.querySelector('.rec');
+        block.style.height = String(Math.round(window.innerHeight * 0.390625)) + "px";
+        block.style.paddingLeft = String(Math.round(window.innerWidth * 0.145833)) + "px";
+        let girl = document.querySelector('.girl');
+        girl.setAttribute("height", String(Math.round(window.innerHeight * 0.25)));
+        girl.style.top = String(Math.round(window.innerHeight * 0.390625 - window.innerHeight * 0.25)) + "px";
+        girl.style.left = String(Math.round(window.innerWidth * 0.3125)) + "px";
+        let table = document.querySelector('table');
+        table.style.marginLeft = String(Math.round(window.innerWidth * 0.201389)) + "px";
+        table.style.width = String(Math.round(window.innerWidth - window.innerWidth * 0.402778)) + "px";
+        let firstLine = document.querySelector('#first');
+        firstLine.style.height = String(Math.round(window.innerHeight * 0.068359375)) + "px";
+        firstLine.style.fontSize = String(Math.round(window.innerWidth * 0.01111111)) + "px";
+        firstLine.querySelector('th').style.width = String(Math.round(window.innerWidth * 0.364583 - window.innerWidth * 0.01875)) + "px";
+        firstLine.querySelector('th').style.paddingLeft = String(Math.round(window.innerWidth * 0.01875)) + "px";
+        firstLine.querySelectorAll('th')[2].style.width = String(Math.round(window.innerWidth * 0.138889)) + "px";
+        document.querySelectorAll('tbody')[1].style.backgroundColor = "white";
+        let classrooms = document.querySelectorAll('tbody')[1].querySelectorAll('tr');
+        for (let classroom of classrooms) {
+            let c = classroom.querySelectorAll('td');
+            c[0].style.paddingLeft = String(Math.round(window.innerWidth * 0.01875)) + "px";
+            c[0].querySelector('h4').style.fontSize = String(Math.round(window.innerWidth * 0.01111111)) + "px";
+            c[0].querySelector('p').style.fontSize = String(Math.round(window.innerWidth * 0.00763889)) + "px";
+            c[1].style.fontSize = String(Math.round(window.innerWidth * 0.00833333)) + "px";
+            c[2].style.fontSize = String(Math.round(window.innerWidth * 0.00902778)) + "px";
+        }
+        let btn = document.querySelector('.btn');
+        btn.style.paddingLeft = String(Math.round(window.innerWidth * 0.00486111)) + "px";
+        btn.style.width = String(Math.round(window.innerWidth * 0.10069444 - window.innerWidth * 0.00486111)) + "px";
+        btn.style.paddingTop = String(Math.round(window.innerHeight * 0.001953125)) + "px";
+        btn.style.height = String(Math.round(window.innerHeight * 0.03125 - window.innerHeight * 0.001953125)) + "px";
+        btn.style.fontSize = String(Math.round(window.innerWidth * 0.00972222)) + "px";
+        btn.style.marginTop = String(Math.round(window.innerHeight * 0.0263671875)) + "px";
+        btn.style.marginBottom = String(Math.round(window.innerHeight * 0.021484375)) + "px";
+        btn.style.marginLeft = String(Math.round(window.innerWidth * 0.683333)) + "px";
+        document.querySelector('ul').style.top = String(Math.round(window.innerHeight * 0.01171875)) + "px";
+        document.querySelector('ul').style.left = "-" + String(Math.round(window.innerWidth * 0.02152778)) + "px";
+        let choice = document.querySelectorAll('li');
+        let txt = `<ul class="submenu">
+                        <li>По направлениям</li>
+                        <li>По кафедрам</li>
+                    </ul>`;
+        for (let c of choice) {
+            c.style.paddingLeft = String(Math.round(window.innerWidth * 0.00486111)) + "px";
+            c.style.width = String(Math.round(window.innerWidth * 0.10069444 - window.innerWidth * 0.00486111)) + "px";
+            c.style.paddingTop = String(Math.round(window.innerHeight * 0.001953125)) + "px";
+            c.style.height = String(Math.round(window.innerHeight * 0.03125 - window.innerHeight * 0.001953125)) + "px";
+            c.style.fontSize = String(Math.round(window.innerWidth * 0.00972222)) + "px";
+            c.addEventListener("click", function () {
+                document.querySelector('.btn').innerHTML = this.innerHTML + txt;
+            });
+        }
+    }
+
+    setInterval(f, 1);
+</script>
+</body>
+</html>

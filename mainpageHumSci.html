@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Гуманитарные науки</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mainpageHSc.css">
+    <link rel="stylesheet" href="mainpageDprtmnt.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="headerChange.js"></script>
+</head>
+<body>
+<header style="display: flex; align-items: center">
+    <p style="font-family: CenGothic; font-size: 16px; font-weight: bold; margin: 0 1% 0 10%;">#HelpFor9</p>
+    <input type="text" class="search" value="" placeholder="Поиск">
+</header>
+<div class="rec">
+    <img src="images/HumSc/Group%20120.png" alt="">
+    <img src="images/HumSc/Group%20121.png" alt="" style="right: 0">
+    <img src="images/HumSc/headerHsc.png" alt="">
+    <img src="images/HumSc/adviceHSc.png" alt="" style="bottom: 0">
+    <img src="images/HumSc/insigniaHSc.png" alt="">
+    <div style="position:absolute; display: flex; align-items: center">
+        <a href=""><p>календарь событий</p></a>
+        <img src="images/Ellipse%20205.png" alt="">
+        <a href=""><p>контакты</p></a>
+    </div>
+</div>
+<div class="orangeHsc"></div>
+<div class="desc centered">
+    <p>
+        При выборе нашего направления ты получишь<br>
+        знания в области истории, культуры, литературы<br>
+        родной страны, а также будешь ориентироваться в<br>
+        экономических и политических тенденциях<br>
+        развития восточного региона и в истории развития<br>
+        отношений России с восточными странами.
+    </p>
+</div>
+<div class="orangeHsc"></div>
+<div class="btns centered">
+    <img src="images/Group%20127.png" alt="">
+    <img src="images/Group%20129.png" alt="">
+    <img src="images/Group%20128.png" alt="">
+</div>
+<div class="blueHSc"></div>
+<div class="centered someInfo">
+    <div>
+        <p>
+            Гордость нашего направления – это самый обширный выбор<br>
+            программы факультетского дня. Из этого огромного списка каждый<br>
+            найдет то, что ему интересно. История, Филология, Философия,<br>
+            Иностранные языки и межкультурная коммуникация, Культурология,<br>
+            Арабско-эфиопская филология – и это лишь малая часть<br>
+            представленных площадок.
+        </p>
+        <p>
+            На этом величественность гуманитарного направления не<br>
+            заканчивается. От количества абитуриентов, до масштабности<br>
+            мероприятий, все у “гумов” ооочень большое. Например,<br>
+            “Медианочь” – одно из самых ярких событий лицея, в котором ты<br>
+            сможешь поучаствовать в следующем году!
+        </p>
+    </div>
+    <img src="images/HumSc/medianight.png" alt="">
+</div>
+<div class="blueHSc"></div>
+<div class="treat centered">
+    <img src="images/HumSc/Group%20130.png" alt="">
+</div>
+<script>
+    function wdth(x) {
+        return String(Math.round(window.innerWidth * x));
+    }
+
+    function hght(x) {
+        return String(Math.round(window.innerHeight * x));
+    }
+
+    function f() {
+        let block = document.querySelector('.rec');
+        block.style.height = hght(0.4638671875) + "px";
+        let images = block.querySelectorAll('img');
+        images[0].setAttribute("width", wdth(0.11111111) + "px");
+        images[1].setAttribute("width", wdth(0.11111111) + "px");
+        images[2].setAttribute("width", wdth(0.41666667) + "px");
+        images[2].style.left = wdth(0.12152778) + "px";
+        images[2].style.top = hght(0.0244140625) + "px";
+        images[3].setAttribute("width", wdth(0.69444444) + "px");
+        images[3].style.left = wdth(0.15277778) + "px";
+        images[4].setAttribute("width", wdth(0.03888889) + "px");
+        images[4].style.top = hght(0.0244140625) + "px";
+        images[4].style.right = wdth(0.03472222) + "px";
+        block.style.fontSize = wdth(0.0090277778) + "px";
+        images[5].setAttribute("width", wdth(0.0048611111) + "px");
+        images[5].setAttribute("height", hght(0.0078125) + "px");
+        images[5].style.marginLeft = wdth(0.0104166667) + "px";
+        images[5].style.marginRight = wdth(0.0104166667) + "px";
+        let linksHead = block.querySelector('div');
+        linksHead.style.height = hght(0.01953125) + "px";
+        linksHead.style.right = wdth(0.11111111) + "px";
+        linksHead.style.top = hght(0.046875) + "px";
+        linksHead.style.lineHeight = hght(0.015625) + "px";
+        block.style.marginBottom = hght(0.048828125) + "px";
+        let orangeLines = document.querySelectorAll('.orangeHsc');
+        for (let l of orangeLines) {
+            l.style.height = hght(0.0244140625) + "px";
+            l.style.backgroundSize = wdth(0.3472222222) + "px " + hght(0.0244140625) + "px";
+        }
+        let desc = document.querySelector('.desc');
+        desc.style.fontSize = wdth(0.01388889) + "px";
+        desc.style.lineHeight = wdth(0.01666667) + "px";
+        desc.style.height = hght(0.3173828125) + "px";
+        document.querySelector('.btns').style.height = hght(0.390625) + "px";
+        let guys = document.querySelector('.btns').querySelectorAll('img');
+        for (let guy of guys) {
+            guy.setAttribute("height", hght(0.25) + "px");
+        }
+        guys[1].style.marginLeft = wdth(0.0868055556) + "px";
+        guys[1].style.marginRight = wdth(0.0868055556) + "px";
+        let blueLines = document.querySelectorAll('.blueHSc');
+        for (let l of blueLines) {
+            l.style.height = hght(0.0244140625) + "px";
+            l.style.backgroundSize = wdth(0.3472222222) + "px " + hght(0.0244140625) + "px";
+        }
+        let infoHum = document.querySelector('.someInfo');
+        infoHum.style.fontSize = wdth(0.01388889) + "px";
+        infoHum.style.lineHeight = hght(0.029296875) + "px";
+        infoHum.style.height = hght(0.5126953125) + "px";
+        infoHum.querySelector('img').setAttribute("width", wdth(0.1736111111) + "px");
+        infoHum.querySelector('img').style.marginLeft = wdth(0.03125) + "px";
+        let treat = document.querySelector('.treat').querySelector('img');
+        treat.setAttribute("width", wdth(0.5) + "px");
+        treat.style.marginTop = hght(0.048828125) + "px";
+    }
+
+    setInterval(f, 1);
+</script>
+</body>
+</html>
